@@ -2,7 +2,7 @@
     .header {
         width: 250px;
     }
-    .right {
+    .other {
         width: 100px;
     }
     .footer {
@@ -14,10 +14,10 @@
     .header {
         width: 150px;
     }
-    .contents {
+    .main {
         float: none;
     }
-    .right {
+    .other {
         width: 150px;
     }
     .footer {
