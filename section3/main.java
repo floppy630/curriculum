@@ -3,7 +3,7 @@
  * バブルソート
  * チェックテスト-Java3章
  */
-public class main {
+public class Main {
 
     public static void main(String[] args) {
         /*
@@ -20,18 +20,20 @@ public class main {
             System.out.print(data[i] + " ");
         }
         System.out.println();
-        for (int i = 0; i < data.length-1; i++) {
+        for (int i = 0; i < data.length; i++) {
+            //何のループ？
             //data.length-1使うなら、<=でいいのでは？あとで調べる。
 
-            for (int j = data.length; j > i; j--) {
+            for (int j = data.length-1; j > i; j--) {
+                //ソートのループ？
                 /*
                 * 問3
                 * 以下、配列の添字を入れてソートを完成させなさい
                 */
-                if(data[/*ここに記述*/] > data[/*ここに記述*/]){
-                  int box = data[/*ここに記述*/];
-                  data[/*ここに記述*/] = data[/*ここに記述*/];
-                  data[/*ここに記述*/] = box;
+                if(data[j] > data[j+1]){
+                  int box = data[j+1];
+                  data[j] = data[j+1];
+                  data[j+1] = box;
                 }
             }
         }
