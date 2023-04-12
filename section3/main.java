@@ -1,5 +1,5 @@
 /**
- * main
+ * Main
  * バブルソート
  * チェックテスト-Java3章
  */
@@ -21,19 +21,20 @@ public class Main {
         }
         System.out.println();
         for (int i = 0; i < data.length; i++) {
-            //何のループ？
-            //data.length-1使うなら、<=でいいのでは？あとで調べる。
+            //入れ替えループを何回繰り返すか
 
             for (int j = data.length-1; j > i; j--) {
-                //ソートのループ？
+                //入れ替える回数
                 /*
                 * 問3
                 * 以下、配列の添字を入れてソートを完成させなさい
+
+                メモ：boxは入れ替える時の一時格納先！
                 */
-                if(data[j] > data[j+1]){
-                  int box = data[j+1];
-                  data[j] = data[j+1];
-                  data[j+1] = box;
+                if(data[i] > data[i+1]){
+                  int box = data[i];
+                  data[i+1] = data[i];
+                  data[i+1] = box;
                 }
             }
         }
